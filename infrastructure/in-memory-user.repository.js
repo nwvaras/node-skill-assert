@@ -1,8 +1,10 @@
 const userSchema = require('../entities/user')
 
 class InMemoryUserRepository {
+
   constructor() {
     this.memory = {}
+    this.TYPE_USER = 'User'
   }
 
   findAllUsers() {
